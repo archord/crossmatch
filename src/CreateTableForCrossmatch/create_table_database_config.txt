@@ -1,0 +1,15 @@
+host=localhost
+port=5432
+dbname=test1
+user=wanmeng
+password=
+
+catfile_table_prefix=catfile_
+match_table_prefix=crossmatch_
+ot_table_prefix=ot_
+ot_flux_table_prefix=ot_flux_
+
+catfile_table_filename=table_struct/catfile.txt
+match_table_filename=table_struct/crossmatch.txt
+ot_table_filename=table_struct/ot.txt
+ot_flux_table_filename=table_struct/ot_flux.txt

@@ -1,0 +1,8 @@
+(
+catid          bigserial,
+catfile         varchar(25),
+airmass       double precision,
+magdiff       double precision,  
+jd             double precision,
+IS_REF        bool, 
+);

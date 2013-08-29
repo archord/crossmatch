@@ -1,0 +1,17 @@
+astrometry.net-0.38： anwcs.h fitsfile.h   libanutils.a  libbackend.a  libbackend.so  libqfits.a  
+
+wcstools-3.8.5： wcs.h libwcs.a
+
+cfitsio: fitsio.h  libcfitsio.a
+
+postgresql: libpq-fe.h libpq.so
+
+-lcfitsio -lm -lpq -lanutils -lpthread -lwcs -lbackend
+
+if the system warning "cannt find libbackend.so", you should mv libbackend.so to /usr/lib or add the path of libbackend.so to the LD_LIBRARY_PATH, as follow:
+
+.bashrc
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:astrometry.net-0.38/lib"
+
+.cshrc
+setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:astrometry.net-0.38/lib   

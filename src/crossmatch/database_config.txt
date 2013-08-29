@@ -1,0 +1,9 @@
+host=localhost
+port=5432
+dbname=test1
+user=wanmeng
+password=
+catfile_table=catfile_20130107
+match_table=crossmatch_20130107
+ot_table=ot_20130107
+ot_flux_table=ot_flux_20130107
